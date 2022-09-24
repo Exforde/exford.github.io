@@ -3,10 +3,10 @@
 	// CONNECTION
 	function dbconnect() {
 
-		$servername = "sql210.epizy.com";
-		$username = "epiz_32422288";
-		$password = "usg7zl5rJbH5";
-		$dbname = "epiz_32422288_dashboardapp";
+		$servername = "localhost";
+		$username = "localhost";
+		$password = "root";
+		$dbname = "plantdashboard";
 
 		$conn = new mysqli($servername, $username, $password, $dbname);
 
