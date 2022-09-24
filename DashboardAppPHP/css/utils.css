@@ -1,0 +1,199 @@
+/* Text, Background */
+.text-center {
+    text-align: center;
+}
+
+.text-blue {
+    color: #0d6efd;
+}
+
+.text-green {
+    color: #198754;
+}
+
+.text-red {
+    color: #dc3545;
+}
+
+.text-white {
+    color: #ffffff;
+}
+
+/* Background */
+.bg-green {
+    background-color: #198754;
+}
+
+.bg-red {
+    background-color: #dc3545;
+}
+
+/* Button */
+.btn {
+    padding: 10px 15px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+.btn.active {
+    background-color: rgb(6, 97, 36);
+    cursor: default;
+}
+
+.btn-default {
+    background-color: rgb(27, 27, 27);
+    color: white;
+}
+
+.btn-default:hover {
+    background-color: rgb(6, 97, 36);
+}
+
+.btn-default:disabled {
+    background-color: rgb(86 86 86);
+    color: #d9d9d9;
+    cursor: no-drop;
+}
+
+.btn-danger-outline {
+    background-color: #ffffff;
+    border: 1px solid #dc3545;
+    color: #dc3545;
+}
+
+.btn-danger-outline:hover {
+    background-color: #ee5060;
+    color: #ffffff;
+}
+
+.btn-danger-outline:disabled {
+    background-color: rgb(86 86 86);
+    color: #d9d9d9;
+    cursor: no-drop;
+}
+
+/* Tables */
+table {
+    width: 100%;
+}
+
+table th, table td {
+    padding: 10px;
+    text-align: left;
+}
+
+/* Badge */
+.badge {
+    padding: 5px 20px;
+    border-radius: 10px;
+}
+
+/* Box */
+.box {
+    flex-grow: 1;
+    margin: 20px;
+    border-radius: 10px;
+    background-color: white;
+    height: auto;
+    color: #626262;
+    width: 100%;
+}
+
+.box .box-header {
+    padding: 20px 25px 0 25px;
+    font-weight: bold;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    position: relative;
+    margin-bottom: 10px;
+}
+
+/* Box - Table */
+.box .box-body table {
+    border-collapse: collapse;
+    font-size: 13px;
+}
+
+.box .box-body table tr {
+    position: relative;
+}
+
+.box .box-body table tr::after {
+    border-bottom: solid 1px #cfcfcf;
+    bottom: 0;
+    content: "";
+    left: 0;
+    position: absolute;
+    width: 100%;
+}
+
+.box .box-body table tbody tr:last-child::after {
+    border-bottom: 0;
+}
+
+.box .box-body table th,
+.box .box-body table td {
+    padding: 20px 40px;
+}
+
+.box .box-body table td {
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+.box .box-body table th {
+    cursor: pointer;
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+    -khtml-user-select: none; /* Konqueror HTML */
+    -moz-user-select: none; /* Old versions of Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    user-select: none; /* Non-prefixed version, currently */
+}
+
+.box .box-body table th.no-pointer {
+    cursor: default !important;
+}
+
+.box .box-body table th span {
+    margin-left: 10px;
+    font-size: 12px;
+}
+
+.box .box-body .pagination {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+/* Box - Form */
+.box .box-body form {
+    display: flex;
+    flex-direction: column;
+    padding: 25px;
+}
+
+.box .box-body form .form-item {
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+}
+
+.box .box-body form .form-item .info-left {
+    width: 10%;
+    font-weight: bold;
+}
+
+.box .box-body form .form-item .info-right {
+    width: 90%;
+}
+
+/* Box - Add Btn */
+.btn-add {
+    position: absolute;
+    top: 33px;
+    right: 26px;
+}

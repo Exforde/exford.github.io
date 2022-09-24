@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Dashboard</title>
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/utils.css">
+        <link rel="stylesheet" href="css/all.min.css">
+    </head>
+
+    <body>
+        <div id="sidebar">
+            <div id="site-title">Dashboard App</div>
+            <div id="side-controls">
+                <a href="#" class="side-item active" onmouseover="sidebarHover(this)" onmouseout="sidebarHoverOut(this)"><span class="fa fa-list"></span><span>Data Tracker</span></a>
+                <a href="#" class="side-item" onmouseover="sidebarHover(this)" onmouseout="sidebarHoverOut(this)"><span class="fa fa-seedling"></span><span>Plant Management</span></a>
+                <a href="#" class="side-item" onmouseover="sidebarHover(this)" onmouseout="sidebarHoverOut(this)"><span class="fa fa-hard-drive"></span><span>Hardware Management</span></a>
+                <a href="#" class="side-item" onmouseover="sidebarHover(this)" onmouseout="sidebarHoverOut(this)"><span class="fa fa-cog"></span><span>Settings</span></a>
+            </div>
+        </div>
+        <div id="content">
+
+            <div id="content-header">
+                <h1>Data Tracker</h3>
+            </div>
+
+            <div id="content-body">
+
+                <div id="temperature-container" class="box">
+                    <div class="box-header">
+                        <h3>HARDWARE LOGS</h3>
+                    </div>
+                    <div class="box-body">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Log ID</th>
+                                    <th>Hardware</th>
+                                    <th>Plant Tracking</th>
+                                    <th>Temperature</th>
+                                    <th>Humidity</th>
+                                    <th>Plant Status</th>
+                                    <th>Datetime</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>#1</td>
+                                    <td>Arduino-123</td>
+                                    <td>Basil</td>
+                                    <td>25°C</td>
+                                    <td>45%</td>
+                                    <td>Wet</td>
+                                    <td>June 22, 2022 11:26 PM</td>
+                                </tr>
+                                <tr>
+                                    <td>#2</td>
+                                    <td>Arduino-123</td>
+                                    <td>Basil</td>
+                                    <td>27°C</td>
+                                    <td>46%</td>
+                                    <td>Wet</td>
+                                    <td>June 22, 2022 11:23 PM</td>
+                                </tr>
+                                <tr>
+                                    <td>#3</td>
+                                    <td>Arduino-123</td>
+                                    <td>Basil</td>
+                                    <td>28°C</td>
+                                    <td>43%</td>
+                                    <td>Wet</td>
+                                    <td>June 22, 2022 11:20 PM</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                
+            </div>
+            
+        </div>
+    </body>
+    <script>
+        function sidebarHover(elem) {
+            elem.classList.add("hover");
+        }
+
+        function sidebarHoverOut(elem) {
+            elem.classList.remove("hover");
+        }
+    </script>
+</html>
